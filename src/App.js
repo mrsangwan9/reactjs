@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import New from "./new"
+const App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+    <New  />
+    <MyApp />
+     <h1>hey React world</h1>
+    <p>heyy this is a   the sum of number is {5+8} paragraph</p>
+     </>
   );
-}
-
+  };      
+ 
+const MyApp=()=>{
+  return <h1>this is calling function </h1>
+};
 export default App;
